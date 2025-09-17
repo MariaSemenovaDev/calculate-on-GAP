@@ -232,10 +232,7 @@ footer {
     grid-column-start: 4;
 }
 
-.calculator__button-operation_equals.equals {
-    grid-column-end: 6;
-    grid-column-start: 4;
-}
+
 /* ------------------------------------------ */
 
 
