@@ -1,5 +1,6 @@
 /*шапргалка по свойствам:*/
 /*https://docs.google.com/document/d/1R8HlJjXWj5oXDZyXT55s4LNsSINhZ1IjY1GtL4I9z8Y/edit?usp=sharing*/
+/*https://www.youtube.com/watch?v=UMeSAvLip5U*/
 
 /* Variables */
 
@@ -199,6 +200,7 @@ aside {
 
 main {
     grid-area: c;
+
 }
 
 footer {
@@ -219,6 +221,11 @@ footer {
     display: grid;
     grid-template-columns: repeat( 5, 80px);
     grid-template-rows: 120px repeat( 4, 80px);
+    gap: 20px;
+    /*justify - это по горизонтали, align - по вертикали*/
+    justify-content: center;
+    align-content: center;
+    height: 100%;
 }
 
 .calculator__display {
@@ -227,11 +234,18 @@ footer {
 }
 
 .calculator__button-operation.plus {
-    grid-row-start: 3;
+    /*grid-row-start: 3;*/
     grid-row-end: span 2;
     /*grid-column-start: 4;*/
-    /*grid-column-end: span 2;*/
+}
+.calculator__button-operation_equals {
+    /*grid-row-start: 3;*/
+    /*grid-row-end: span 2;*/
 
+    /*4 - это старт, -1 - это end*/
+    grid-column: 4 / -1;
+    /*align-self: end;*/
+    /*justify-self: start;*/
 }
 
 
